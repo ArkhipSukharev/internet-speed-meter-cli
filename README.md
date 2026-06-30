@@ -46,30 +46,27 @@ python internet_speed_meter.py "https://upload.wikimedia.org/wikipedia/commons/3
 
 ## Визуальное приложение (Streamlit)
 
-Установка зависимостей:
+### Основной запуск для Windows (через `.bat`)
+
+1. Откройте папку проекта.
+2. Дважды кликните `start_speedtest.bat`.
+3. Скрипт:
+   - проверит Python;
+   - при необходимости установит зависимости;
+   - запустит Streamlit и откроет приложение в браузере.
+
+### Запуск через терминал (альтернатива)
+
+```bash
+start_speedtest.bat
+```
+
+### Ручной запуск (если нужен)
 
 ```bash
 pip install -r requirements.txt
-```
-
-Запуск UI:
-
-```bash
 streamlit run app.py
 ```
-
-Быстрый запуск по двойному клику:
-
-- откройте `start_speedtest.py` двойным кликом (или командой ниже);
-- скрипт сам запустит Streamlit и откроет браузер.
-
-```bash
-python start_speedtest.py
-```
-
-Для Windows также добавлен `start_speedtest.bat`:
-- двойной клик по `start_speedtest.bat` запускает приложение сразу.
-- если `streamlit` не установлен, `.bat` автоматически поставит зависимости из `requirements.txt`.
 
 В приложении можно:
 - указать URL файла;
